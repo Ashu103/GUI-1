@@ -1,0 +1,17 @@
+from tkinter import *
+
+
+def Display():
+    string = e.get()
+    e.focus_set()
+    print(string)
+
+
+root =Tk()
+e =Entry(root)
+e.pack()
+
+
+b = Button(root,text='Write something',command=Display)
+b.pack(side='bottom')
+root.mainloop()

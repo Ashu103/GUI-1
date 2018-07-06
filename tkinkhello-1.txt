@@ -1,0 +1,12 @@
+from tkinter import *
+
+root =Tk()
+
+def action():
+    root.destroy()
+
+label1=Label(root,text='Hello world')
+label1.pack()
+button = Button(root, text="Exit", command = action)
+button.pack()
+root.mainloop()

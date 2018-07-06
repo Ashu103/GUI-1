@@ -1,0 +1,12 @@
+from tkinter import *
+
+root =Tk()
+
+
+def action():
+    label1=Label(root,text='welcome to GUI')
+    label1.pack()
+
+button = Button(root,text="Display",command= action)
+button.pack()
+root.mainloop()

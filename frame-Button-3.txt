@@ -1,0 +1,19 @@
+from tkinter import *
+
+def fun1():
+    label1.configure(text='Stupid why did you click')
+
+def fun2():
+    root.destroy()
+
+
+root = Tk()
+frame = Frame(root)
+frame.pack()
+label1 =Label(frame, text='write n display your text')
+label1.pack()
+b1=Button(frame,text="click me",command=fun1)
+b1.pack()
+b2=Button(frame,text=' I am Destructor',command=fun2)
+b2.pack()
+root.mainloop()
